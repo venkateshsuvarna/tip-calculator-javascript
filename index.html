@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function calculateTip(){
+			var initialAmount;
+			var tipFactor;
+			var tipAmount = (document.getElementById('initialAmountInput').value * (1 + document.getElementById('selectTip').value)/document.getElementById('totalNumberOfPeopleInput').value);
+			document.getElementById('answerHeading').innerHTML += "Each one of you should pay $ "+tipAmount;
+			alert("Tip is "+tipAmount);
+		}
+	</script>
+</head>
+<body>
+
+	<div id="headerDiv">
+		<h1 id="tipCalculatorHeading"><strong>Tip Calculator</strong></h1>
+	</div>
+
+	<div id="answerDiv">
+		<h2 id="answerHeading"><strong></strong></h2>
+	</div>
+
+	<div id="calculatorDiv">
+		<table id="calculatorTable">
+			<tr>
+				<td>
+					<p><strong>How much was your bill?</strong></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					$ <input type="number" name="initialAmountInput" id="initialAmountInput" placeholder="Enter amount here">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p><strong>How was your service?</strong></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select id="selectTip">
+						<option value="0.5">5% - Bad</option>
+						<option value="0.10">10% - Okay</option>
+						<option value="0.15">15% - Good</option>
+						<option value="0.20">20% - Very Good</option>
+						<option value="0.30">30% - Excellent</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p><strong>How many people are sharing the bill?</strong></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="number" name="totalNumberOfPeopleInput" id="totalNumberOfPeopleInput" placeholder="Enter number of people">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="submit" id="calculateTipButton" name="submit" onclick="calculateTip()">Calculate Tip</button>
+				</td>
+			</tr>
+		</table>
+		
+		
+	</div>
+
+</body>
+</html>

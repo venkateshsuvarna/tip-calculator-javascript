@@ -1,0 +1,49 @@
+body{
+	background-color: #00e6b8;
+	font-family: roboto;
+}
+#headerDiv{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+#answerDiv{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+#calculatorDiv{
+	width: 80%;
+	margin: auto;
+	padding:30px;
+	background-color: #FFFFFF;
+	border: 2px solid black;
+	border-radius: 10px;
+	text-align: center;
+}
+#calculatorTable{
+	width:100%;
+	margin: auto;
+	padding:30px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+input[type = number]{
+	margin: 10px;
+	border: 2px solid black;
+	padding: 15px;
+	border-radius: 10px;
+}
+#selectTip{
+	border : 2px solid black;
+	border-radius: 10px;
+	padding: 20px;
+}
+#calculateTipButton{
+	background-color: #00e6b8;
+	color: #000000;
+	border : 2px solid black;
+	border-radius: 10px;
+	margin-top: 30px;
+	padding: 30px;
+}
